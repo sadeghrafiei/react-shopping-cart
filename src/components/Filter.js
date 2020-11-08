@@ -6,16 +6,16 @@ export default class componentName extends Component {
             <div className="filter">
                 <div className="filter-result">{this.props.count}</div>
                 <div className="filter-sort"> 
-                Order 
-                <select>
+                Order{" "}
+                <select value={this.props.size} onChange={this.props.sortProducts}>
                     <option>Latest</option>
                     <option value="lowest">Lowest</option>
                     <option value="highest">Highest</option>
                 </select>
                  </div>
                  <div className="filter-size">
-                     Filter
-                     <select>
+                     Filter{" "}
+                     <select value={this.props.size} onChange={this.props.filterProducts}>
                          <option value="">ALL</option>
                          <option value="XS">XS</option>
                          <option value="S">S</option>
